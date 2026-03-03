@@ -1194,7 +1194,7 @@ a:focus-visible {
     margin-bottom: var(--spacing-2);
 }
 
-footer-links a {
+.footer-links a {
   color: #008080;
   font-size: var(--font-size-sm);
   transition: color var(--transition-fast);

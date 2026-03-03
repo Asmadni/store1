@@ -1195,7 +1195,7 @@ a:focus-visible {
 
 /* ✅ Quick links + Contact (Email & Phone) links color */
 .footer-links a {
-    color: #00FFF;
+    color: #00FFFF;
     font-size: var(--font-size-sm);
     transition: color var(--transition-fast);
 }

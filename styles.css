@@ -1194,10 +1194,15 @@ a:focus-visible {
     margin-bottom: var(--spacing-2);
 }
 
-.color: var(--color-gray-300);
-    color: .footer-links a {
-  color: white;
-    }
+footer-links a {
+  color: #008080;
+  font-size: var(--font-size-sm);
+  transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+  color: #00b3b3;   /* thora light shade hover ke liye */
+}
 
 .footer-links a:hover {
   color: var(--color-white);

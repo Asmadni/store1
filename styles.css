@@ -1189,16 +1189,15 @@ a:focus-visible {
 .footer-links {
     list-style: none;
 }
-.footer a {
-  color: white;
-}
 
 .footer-links li {
     margin-bottom: var(--spacing-2);
 }
 
 .footer-links a {
-    color: var(--color-gray-300);
+    color: .footer-links a {
+  color: white;
+    };
     font-size: var(--font-size-sm);
     transition: color var(--transition-fast);
 }

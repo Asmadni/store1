@@ -1194,11 +1194,10 @@ a:focus-visible {
     margin-bottom: var(--spacing-2);
 }
 
-.footer-links a {
+.color: var(--color-gray-300);
+    color: .footer-links a {
   color: white;
-  font-size: var(--font-size-sm);
-  transition: color var(--transition-fast);
-}
+    }
 
 .footer-links a:hover {
   color: var(--color-white);

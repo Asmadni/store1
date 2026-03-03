@@ -1195,11 +1195,13 @@ a:focus-visible {
 }
 
 .footer-links a {
-    color: .footer-links a {
   color: white;
-    };
-    font-size: var(--font-size-sm);
-    transition: color var(--transition-fast);
+  font-size: var(--font-size-sm);
+  transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+  color: var(--color-white);
 }
 
 .footer-links a:hover {

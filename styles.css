@@ -1,3 +1,4 @@
+
 /* ==========================================================================
    Pakzon eCommerce Website Styles
    Fully Responsive | WCAG 2.1 AA Compliant | Mobile-First Approach
@@ -121,7 +122,7 @@ body {
 
 .skip-link:focus {
     top: 0;
-    outline: 3px solid var(--color-accent);
+    outline: 3px solid var(--color-white); /* WCAG FIX: var(--color-accent) → var(--color-white) | ratio: 2.72:1 → 5.62:1 */
     outline-offset: 2px;
 }
 
@@ -398,6 +399,10 @@ a:focus-visible {
     color: var(--color-white);
 }
 
+.btn-primary:focus-visible {
+    outline-color: var(--color-white); /* WCAG FIX: var(--color-primary) → var(--color-white) | ratio: 1.00:1 → 5.62:1 */
+}
+
 .btn-primary:hover {
     background-color: var(--color-primary-dark);
     color: var(--color-white);
@@ -436,6 +441,10 @@ a:focus-visible {
     color: var(--color-white);
     font-size: var(--font-size-sm);
     padding: var(--spacing-2) var(--spacing-4);
+}
+
+.btn-buy:focus-visible {
+    outline-color: var(--color-white); /* WCAG FIX: var(--color-primary) → var(--color-white) | ratio: 1.00:1 → 5.62:1 */
 }
 
 .btn-buy:hover {
@@ -547,6 +556,7 @@ a:focus-visible {
 
 .product-badge.badge-new {
     background-color: var(--color-accent);
+    color: var(--color-gray-900); /* WCAG FIX: var(--color-white) → var(--color-gray-900) | ratio: 2.07:1 → 8.58:1 */
 }
 
 .product-info {
@@ -1184,6 +1194,15 @@ a:focus-visible {
     font-size: var(--font-size-sm);
     line-height: 1.6;
     font-style: normal;
+}
+
+.footer-text a,
+.footer-text a:visited {
+    color: var(--color-gray-200); /* WCAG FIX: var(--color-primary) → var(--color-gray-200) | ratio: 3.16:1 → 14.33:1 */
+}
+
+.footer-text a:hover {
+    color: var(--color-white); /* WCAG FIX: var(--color-primary-dark) → var(--color-white) | ratio (old on dark): ~4.49:1 (borderline) → 17.74:1 */
 }
 
 .footer-links {
